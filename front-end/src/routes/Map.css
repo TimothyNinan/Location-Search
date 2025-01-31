@@ -1,0 +1,65 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* Allow body to scroll */
+}
+
+.container {
+    max-height: 100vh; /* Ensure container does not exceed viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px;
+}
+
+.results-container {
+    max-height: 300px; /* Adjust the height as needed */
+    overflow-y: auto;
+    padding-right: 15px; /* Optional: Add padding to avoid scrollbar overlap */
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 2px;
+    background-color: #f9f9f9;
+}
+
+li:hover {
+    background-color: #e0e0e0;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 35%;
+    left: 35%;
+    /* background: rgba(0, 0, 0, 0.5);
+    background: white;
+    background: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 420;
+    background: rgba(255, 255, 255, 1);
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 85%;
+    height: 65%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000000;
+    overflow-y: auto; /* Allow vertical scrolling for overflowing content */
+    word-wrap: break-word; /* Ensure long words are broken into the next line */
+    overflow-wrap: break-word; /* Add additional wrap handling */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
