@@ -5,6 +5,11 @@ The Location Search project aims to create a web application that allows the use
 Included in the user interface is a way to filter for a specific type of location and give either exact coordinates of the user’s location or pinning a location on the map. The two types of filters users can use will be searching for locations based on their ratings and type of location. It is relevant to mention that the results are displayed as pins in the map and, thanks to a sidebar, users can see the details of each location that may interest them such as distance, user ratings, and price level. Moreover, the user will be able to sort the results by price, rating, and distance, and select the number of locations displayed. 
 Finally, the map is supposed to be responsive and interactive, showing a mini-popup with main details when hovering over a location pin and listing more detailed information like the website of the location when clicking on the location pin.
 
+### UI
+![Screenshot 2025-01-31 at 5 19 40 PM](https://github.com/user-attachments/assets/ce4154e5-f16b-4897-b9ac-deb619953faa)
+
+### Sequence Diagram
+![Screenshot 2025-01-31 at 5 20 17 PM](https://github.com/user-attachments/assets/c9d34f2c-54b2-47be-afd5-c26a929391c7)
 
 ## Release Notes
 v. 1.0.0
@@ -97,6 +102,3 @@ If you have build errors, try cleaning the project and reloading.
 
 In VSCode, cmd + shift + p, type and select Java: Clean Java Language Server Workspace.
 You should be given a prompt to reload the workspace. Click reload.
-
-## GCP Deployment 
-https://frontend-service-dot-cs3300-location-project.ue.r.appspot.com/ 
